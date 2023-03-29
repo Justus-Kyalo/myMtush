@@ -12,14 +12,14 @@ class AddProduct extends Component {
     description: "",
     image: "",
     cost: "",
-    weight: "",
-    quantity: "",
-    sku: "",
-    // seller_id: null
+    
+    quantity: ""
+    
+    
   }
 
 handleChange = (event) => {
-  // console.log(event.target.value)
+  
   this.setState({
     [event.target.name] : event.target.value
   }, () => console.log(this.state))
@@ -27,12 +27,10 @@ handleChange = (event) => {
 
 handleSubmit = (event) => {
   event.preventDefault()
-  // console.log(this.state)
-  // let price = this.state.price
-  // console.log(price.to_i)
+  
 this.props.addProduct(this.state)
 
-// fetch(`http://localhost:3001/products`, {
+
 fetch(`http://localhost:3000/products`, {
   method: "POST",
   headers: {
@@ -53,7 +51,7 @@ fetch(`http://localhost:3000/products`, {
 
   })
 }).then(response => response.json())
-// .then(product => console.log(product))
+
 
 }
 
@@ -109,7 +107,7 @@ render() {
 }
 
 const mapStateToProps = ({user}) => {
-  // console.log(user.user)
+  
   return {
     currentUser: user.user
   }
