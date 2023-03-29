@@ -66,6 +66,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    bcrypt (3.1.18)
     builder (3.2.4)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
@@ -74,6 +75,7 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     erubi (1.12.0)
+    foreman (0.87.2)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -109,6 +111,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.6.4)
+    rack-cors (2.0.1)
+      rack (>= 2.0.0)
     rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.4.3)
@@ -140,6 +144,7 @@ GEM
     rake (13.0.6)
     reline (0.3.3)
       io-console (~> 0.5)
+    spring (4.1.1)
     sqlite3 (1.6.2-x86_64-linux)
     thor (1.2.1)
     timeout (0.3.2)
@@ -154,9 +159,13 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt
   debug
+  foreman
   puma (~> 5.0)
+  rack-cors
   rails (~> 7.0.4, >= 7.0.4.3)
+  spring
   sqlite3 (~> 1.4)
   tzinfo-data
 
