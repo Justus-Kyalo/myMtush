@@ -108,8 +108,8 @@ plusQuantity = (cart) => {
       <p class="cart-page-name">{this.props.productCart.name}</p>
       <img class="cart-page-image"src={this.props.productCart.image}/>
         <p class="cart-page-quantity"> Quantity: {this.state.count}</p>
-        <p class="cart-page-price-per-item">Price per Item: ${this.state.priceperItem.toFixed(2)}</p>
-        <p class="cart-page-totalprice">Total Price: ${parseFloat(this.state.totalprice).toFixed(2)} </p>
+        <p class="cart-page-price-per-item">Price per Item: Ksh{this.state.priceperItem.toFixed(2)}</p>
+        <p class="cart-page-totalprice">Total Price: Ksh{parseFloat(this.state.totalprice).toFixed(2)} </p>
         <button className="minus-cart-button" onClick={() => this.minusQuantity(this.props.productCart)}>-</button>
         <div className="cart-quantity-form">{this.state.count}</div>
         <button className="plus-cart-button" onClick={() => this.plusQuantity(this.props.productCart)} >+</button>

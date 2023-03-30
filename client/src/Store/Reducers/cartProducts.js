@@ -1,18 +1,18 @@
 
 
-const inititalState = {
-  cartProducts: []
+const initialState = {
+  cartProducts: {
+    carts: []
+  }
 }
 
-const reducer = (state = inititalState, action ) => {
+const reducer = (state = initialState, action ) => {
   switch(action.type) {
     case "ADD_PRODUCT_CART":
     const productToCart = action.payload
-    console.log(productToCart)
-    console.log(state)
-    console.log("hit product cart", state.cartProducts)
+   
     const addArray = [...state.cartProducts.carts, productToCart]
-    console.log(addArray)
+    //console.log(addArray)
     return {cartProducts: {carts: addArray}}
 
 
