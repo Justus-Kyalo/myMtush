@@ -11,9 +11,9 @@ class SellerPage extends Component{
     let token = localStorage.getItem('token')
     console.log(token)
     if (token) {
-      // fetch(`http://localhost:3001/current_user`, {
+      
       fetch(`http://localhost:3000/current_user`, {
-        // method: "POST",
+         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accepts: "application/json",

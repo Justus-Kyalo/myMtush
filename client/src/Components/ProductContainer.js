@@ -55,7 +55,7 @@ this.setState({
   selectedProduct: cartproduct
 })
 
-// fetch(`http://localhost:3001/carts`, {
+
 fetch(`http://localhost:3000/carts`, {
   method: "POST",
   headers: {

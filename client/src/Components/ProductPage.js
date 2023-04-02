@@ -35,18 +35,7 @@ handleSubmit = (e, cartproduct ) => {
     selectedProduct: cartproduct
   })
 
-// let productExists = this.props.productInCart.carts.map(cart => {
-//   if (cart.product_id === cartproduct.id) {
-//     return cart
-//   }
-// })
-//
-// console.log(productExists)
 
-  // if(this.props.productInCart.carts)
-
-
-  // fetch(`http://localhost:3001/carts`, {
   fetch(`http://localhost:3000/carts`, {
     method: "POST",
     headers: {

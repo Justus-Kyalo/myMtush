@@ -16,9 +16,9 @@ class Cart extends Component {
     let token = localStorage.getItem('token')
     console.log(token)
     if (token) {
-      // fetch(`http://localhost:3001/current_user`, {
+      
       fetch(`http://localhost:3000/current_user`, {
-        // method: "POST",
+         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accepts: "application/json",
@@ -55,7 +55,7 @@ class Cart extends Component {
      this.props.cartOrdered()
 
      orderedCarts.forEach(cart => {
-       // return fetch(`http://localhost:3001/carts/${cart.id}`, {
+      
        return fetch(`http://localhost:3000/carts/${cart.id}`, {
          method: "PATCH",
          headers: {
@@ -97,7 +97,7 @@ class Cart extends Component {
         let quantityRemaining = productQty - cartQty
         console.log(quantityRemaining)
 
-        // return fetch(`http://localhost:3001/products/${product.id}`, {
+        
         return fetch(`http://localhost:3000/products/${product.id}`, {
           method: "PATCH",
           headers: {

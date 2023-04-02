@@ -32,10 +32,7 @@ class SignUpForm extends Component {
     event.preventDefault()
     console.log(this.state)
     console.log("submitted")
-    // debugger
-    // const newuser = this.state.user
-    // this.props.createNewUser(newuser)
-    // fetch(`http://localhost:3001/users`, {
+ 
     fetch(`http://localhost:3000/users`, {
       method: "POST",
       headers: {
@@ -66,9 +63,7 @@ class SignUpForm extends Component {
           this.props.currentUser(nouser)
         }
       }
-      // this.setState({
-      //   user: user
-      // })
+     
     })
   }
 

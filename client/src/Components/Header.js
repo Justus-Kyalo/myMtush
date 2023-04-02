@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Navbar, NavbarBrand, NavbarNav, NavItem, NavLink, NavbarToggler, Collapse, FormInline, Dropdown, DropdownToggle, DropdownMenu,  DropdownItem } from "react-bootstrap";
 import {NavLink} from 'react-router-dom'
 import { connect } from 'react-redux';
 import { deleteUser } from '../Store/Actions/userActions'
