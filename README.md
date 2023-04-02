@@ -1,6 +1,7 @@
 # myMtush 
 - myMtush is a web-based ecommerce platform that allows users to buy and sell second-hand clothes. The platform is built using Ruby on Rails for the backend and React for the frontend. The platform also features authentication, which allows users to sign up and log in as either a customer or a seller.
 
+![scrrenshot.png](https://github.com/RemmyKyalo/myMtush/blob/main/screenshot/Screenshot%20from%202023-04-02%2018-38-21.png)
 
 # Features
 # User Authentication:
